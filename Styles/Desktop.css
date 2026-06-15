@@ -33,6 +33,18 @@
     width: 50%;
     margin-bottom: 40px;
   }
+
+  .SheffieldHallamLink
+  {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
   
   /* Header =========================================================================================== */
   .JP-HeaderContainer {
