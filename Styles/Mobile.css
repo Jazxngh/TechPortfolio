@@ -196,6 +196,12 @@ body {
   margin-bottom: 20px;
 }
 
+.VelocitiTitle {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .ExperienceText {
   max-width: 100%;
   text-align: left;

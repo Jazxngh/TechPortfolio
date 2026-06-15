@@ -397,6 +397,17 @@
     animation: fade ease-in;
 }
 
+.VelocitiTitle
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 30px;
+
+  animation: fade ease-in;
+}
+
+
 .ExperienceText
 {
   display: flex;
