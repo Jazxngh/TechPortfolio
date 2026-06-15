@@ -1,0 +1,210 @@
+/* ====================================================================================
+   MOBILE STYLES - Jazz's Portfolio
+   Loaded only when screen width <= 768px (see <link> media attribute in HTML)
+   Goal: stack everything vertically, shrink oversized desktop elements,
+         improve tap targets, and remove desktop-only cursor/animation quirks.
+==================================================================================== */
+
+/* General -------------------------------------------------------------------------- */
+body {
+  cursor: auto; /* custom cursor images don't make sense on touch devices */
+}
+
+.HR-Container,
+.HR-Container2 {
+  justify-content: center;
+}
+
+.HR-Styled {
+  width: 85%;
+  margin-bottom: 25px;
+}
+
+/* Header ============================================================================ */
+.JP-HeaderContainer {
+  flex-direction: column;
+  padding: 12px 16px;
+  gap: 12px;
+  cursor: auto !important;
+}
+
+.JP-HeaderImgSection img {
+  max-width: 130px;
+  width: 130px;
+  height: auto;
+}
+
+/* Nav becomes a horizontal, scrollable icon bar instead of a text list */
+.JP-NavBar ul {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+  width: 100%;
+  justify-content: space-around;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.JP-NavBar a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: white;
+  text-decoration: none;
+}
+
+/* Show icons on mobile (desktop hides them), shrink the text label */
+.JP-NavBar .material-symbols-outlined {
+  display: block;
+  font-size: 22px;
+}
+
+.JP-NavBar a:hover {
+  color: #9EC8B9;
+  text-decoration: none;
+}
+
+/* Resume button: move out of the header's way, turn into a small floating
+   action button anchored to the bottom-right corner */
+.resume-button-container {
+  top: auto;
+  bottom: 20px;
+  right: 16px;
+  z-index: 9998;
+}
+
+.resume-button {
+  width: 56px;
+  height: 56px;
+  padding: 10px;
+}
+
+.resume-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Hero ============================================================================== */
+.JP-Hero {
+  height: 50vh;
+}
+
+.JP-Title {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+  padding: 0 10px;
+}
+
+.PhotoContainer-prequote {
+  font-size: 1rem;
+  padding: 0 16px;
+}
+
+/* About / Owner Info ================================================================ */
+.OwnerInfoSection {
+  flex-direction: column;
+  padding: 35px 18px;
+  margin: 0 12px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.OwnerImg img {
+  max-width: 180px;
+  width: 60%;
+  margin: 0 auto 16px;
+}
+
+.OwnerText {
+  max-width: 100%;
+  padding: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  text-align: left;
+}
+
+/* Tech stack / image slider ========================================================= */
+.TechInfoSection {
+  padding: 40px 0;
+}
+
+.JPImgSliderSection {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.JPImgSlider {
+  width: 100%;
+}
+
+.JPImgSlider img {
+  width: 90px;
+  margin-right: 50px;
+}
+
+.TechStackText {
+  font-size: 1.2rem;
+  padding: 0 16px;
+}
+
+/* Projects Gallery =================================================================== */
+.JPGalleryTitle {
+  font-size: 1.6rem;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.JP-Gallery-Container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 16px;
+  max-width: 100%;
+}
+
+.JP-Gallery-Container img {
+  height: 130px;
+}
+
+/* Tap doesn't have hover, so give a subtle press effect instead of scale-on-hover */
+.JP-Gallery-Container img:active {
+  transform: scale(0.97);
+  transition: 0.15s ease-in-out;
+}
+
+/* Experience ========================================================================= */
+.ExperienceInfoSection {
+  height: auto;
+  margin: 60px 12px 35px;
+  padding: 40px 18px;
+  border-radius: 16px;
+}
+
+.JPExperienceTitle {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.AutoDeskTitle {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.ExperienceText {
+  max-width: 100%;
+  text-align: left;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* Footer ============================================================================= */
+footer {
+  padding: 16px;
+  font-size: 0.8rem;
+}

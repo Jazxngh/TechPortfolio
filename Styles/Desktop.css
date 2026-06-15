@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth; /* Smooth scrolling for href anchor links */  
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: white;
+    cursor: url("../Cursor/JPCursor.png"), auto;
+  }
+
+  .HR-Container
+  {
+    display: flex;
+    justify-content: left;
+  }
+  
+  .HR-Container2
+  {
+    display: flex;
+    justify-content: right;
+  }
+
+  .HR-Styled
+  {
+    align-items: center;
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  
+  /* Header =========================================================================================== */
+  .JP-HeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    cursor: url("../Cursor/JPCursorPointer.png"), pointer !important;
+  }
+  
+  .JP-HeaderImgSection img {
+    max-width: 500px;
+    height: auto;
+  }
+  
+  .JP-NavBar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  
+  }
+  
+  .JP-NavBar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .JP-NavBar a:hover {
+    color: #9EC8B9;
+    transition: 0.3s ease-in-out;
+    text-decoration: underline;
+    cursor: url("../Cursor/JPCursorPointer.png"), pointer !important;
+  }
+
+  .resume-button-container {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    z-index: 9998;
+}
+
+.resume-button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #9EC8B9;
+    background-color: #092635;
+    border: 2px solid #1A3F52;
+    border-radius: 50%;
+    padding: 16px;
+    transition: 0.2s;
+    text-decoration: none;
+    width: 75px;
+    height: 75px;
+    margin-top: 0;
+  }
+
+.resume-button:hover {
+    background-color: #1A3F52;
+    border-color: #9EC8B9;
+    color: #9EC8B9;
+    transform: scale(1.1);
+    cursor: url("../Cursor/JPCursorPointer.png"), pointer !important;
+  }
+    
+/*Desktop only*/
+
+/*On Mobile shows icons, desktop text*/
+
+.JP-NavBar .material-symbols-outlined {
+  display: none; /*hide icons*/
+}
+
+.JP-NavBar a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+  
+  /* BG hero video Section =================================================================================================================*/
+  .JP-Hero {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    animation: fade 1.2s ease-in-out;
+  }
+  
+  .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .BG-Overlay-Content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 10px;
+  }
+
+  .JP-Title {
+    font-size: 5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+    animation: fade 1.2s ease-in-out;
+  }
+  
+.JP-Title:hover {
+    color: #9EC8B9;
+    transition: 0.3s ease-in-out;
+    cursor: pointer; /*Theres pointer, Wait, Move, Text, Crosshair, Help, Progress, Not-Allowed, Grab, Grabbing */
+    cursor: url("../Cursor/JPCursorPointer.png"), pointer !important;
+  }
+
+  .PhotoContainer-prequote {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    animation: fade 1.2s ease-in-out;
+  }
+
+  .PhotoContainer-prequote:hover {
+    color: #9EC8B9;
+    transition: 0.3s ease-in-out;
+    cursor: pointer; /*Theres pointer, Wait, Move, Text, Crosshair, Help, Progress, Not-Allowed, Grab, Grabbing */
+    cursor: url("../Cursor/JPCursorPointer.png"), pointer !important;
+  }
+  
+  /* Fade animation =========================================================================================== */
+  @keyframes fade {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .PhotoBox {
+    width: 250px;
+    transition: transform 0.6s ease-in-out;
+    animation: fade 1.2s ease-in-out;
+    will-change: transform;
+  }
+  
+  .PhotoBox img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.6s ease-in-out;
+  }
+  
+  .PhotoBox:hover {
+    transform: scale(1.2);
+    z-index: 2;
+  }
+  
+  /* Info Section ==========================================================================================================*/
+  .OwnerInfoSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    padding: 60px 20px;
+    margin-bottom: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 25px;
+    animation: fade 1.2s ease-in-out;
+
+    animation: fade ease-in;
+    animation-timeline:view();
+  }
+  
+  .OwnerImg img {
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
+    margin: 20px;
+    animation: fade 1.2s ease-in-out;
+  }
+  
+  .OwnerText {
+    max-width: 700px;
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+    animation: fade 1.2s ease-in-out;
+  }
+  
+  .TechInfoSection
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000000;
+    color: #f1f1f1;
+    padding: 60px 20px;
+    margin-bottom: 35px;
+    animation: fade 1.2s ease-in-out;
+
+    animation: fade ease-in;
+    animation-timeline:view();
+  }
+
+@keyframes slide{ 
+    0%{
+    transform: translateX();
+}
+25%{
+    transform: translateX(-100%);
+}
+50%{
+    transform: translateX(-100%);
+}
+55%{
+    transform: translateX(-200%);
+}
+75%{
+    transform: translateX(-200%);
+}
+}
+
+  .JPImgSliderSection
+{
+    margin-top: 75px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 75px;
+
+    animation: fade linear;
+    animation-timeline:view();
+}
+
+.JPImgSlider
+{
+    width: 75%;
+    display: flex;
+    flex-direction: row; /*Important to add this as mobile is column otherwise it'll apply to desktop too*/
+    animation: slide 16s infinite;
+
+    /*//never have multiple keyframe identifiers in a class style */
+    
+}
+
+.JPImgSlider img
+{
+   width: 200px;
+    aspect-ratio: 2 / 3; /* Keeps all images exactly the same shape (Portrait) */
+   object-fit: contain;
+   flex-shrink: 0;
+   margin-right: 120px;
+
+   animation: fade linear;
+   animation-timeline:view();
+}
+
+
+
+  .TechStackList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .TechStackText {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+.JPGalleryTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.JP-Gallery-Container
+ {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin: 32px auto;
+    margin-bottom: 20px;
+    animation: fade 1.2s ease-in-out;
+}
+
+.JP-Gallery-Container img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.JP-Gallery-Container img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    cursor: url("../Cursor/JPCursorPointer.png"), pointer !important;
+}
+
+.ExperienceInfoSection
+{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+  padding: 60px 20px;
+  margin-bottom: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 25px;
+  animation: fade 1.2s ease-in-out;
+  height: 100vh;
+  margin-top: 150px;
+
+  animation: fade ease-in;
+  animation-timeline:view();
+}
+
+.JPExperienceTitle
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.AutoDeskTitle
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+
+    animation: fade ease-in;
+}
+
+.ExperienceText
+{
+  display: flex;
+  justify-content: center;  
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+  /* Footer ===================================================================================================*/
+  footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
