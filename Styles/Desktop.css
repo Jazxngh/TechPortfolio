@@ -36,12 +36,12 @@
 
   .SheffieldHallamLink
   {
-    color: #0060B6;
+    color: #9EC8B9;
     text-decoration: none;
 }
 
 a:hover {
-    color:#00A0C6; 
+    color:#9af1d2; 
     text-decoration:none; 
     cursor:pointer;  
 }
@@ -429,6 +429,41 @@ a:hover {
   margin: 0 auto;
 }
 
+/* Contact Me ========================================================================== */
+
+.ContactMeSection
+{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 25px;
+  animation: fade 1.2s ease-in-out;
+  margin-top: 150px;
+  margin-bottom: 100px;
+
+  animation: fade ease-in;
+}
+
+.ContactMeTitle
+{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.ContactMeText
+{
+  display: flex;
+  justify-content: center;  
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
   /* Footer ===================================================================================================*/
   footer {
     background-color: #000;
