@@ -398,7 +398,6 @@ a:hover {
   margin: 0 auto;
   border-radius: 25px;
   animation: fade 1.2s ease-in-out;
-  height: 100vh;
   margin-top: 150px;
 
   animation: fade ease-in;
@@ -485,6 +484,13 @@ a:hover {
   max-width: 90%;
   margin: 0 auto;
 }
+.ContactMeText:hover {
+    color: #9EC8B9;
+    transition: 0.3s ease-in-out;
+    cursor: pointer; /*Theres pointer, Wait, Move, Text, Crosshair, Help, Progress, Not-Allowed, Grab, Grabbing */
+    cursor: url("../Cursor/JPCursorPointer.png"), pointer !important;
+}
+
   /* Footer ===================================================================================================*/
   footer {
     background-color: #000;
