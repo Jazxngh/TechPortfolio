@@ -1,4 +1,4 @@
-// Creat an list aka array of text to display and it'll cycle through them one by one, typing and deleting each phrase in turn
+// Create a list (array) of phrases to cycle through, typing and deleting each one in turn
 const phrases = [
   "I like to develop and create ... Sometimes",
   "Software Engineer, Web Developer & A Designer",
@@ -31,18 +31,19 @@ function type() {
     // so it looks like letters are appearing one by one
     el.textContent = current.substring(0, charIndex++);
   }
- //Speed of deletion is faster than speed of typing, so we use a ternary operator to set the speed variable
+
+  // Speed of deletion is faster than speed of typing, so we use a ternary operator to set the speed variable
   let speed = isDeleting ? 40 : 80;
 
   if (!isDeleting && charIndex === current.length + 1) {
-    // We'll finish typing the whole phrase! then Wait 1.8 seconds so the reader can read it, then start deleting (Buffer like effect)
+    // Finished typing the whole phrase — pause so the reader can read it, then start deleting
     speed = 1800;
     isDeleting = true;
   } else if (isDeleting && charIndex === 0) {
-    // We'll finish deleting the whole phrase! ... Then switch back to typing mode
+    // Finished deleting the whole phrase — switch back to typing mode
     isDeleting = false;
 
-// Move to the next phrase, % makes it loop back to 0 when it reaches the end
+    // Move to the next phrase, % makes it loop back to 0 when it reaches the end
     phraseIndex = (phraseIndex + 1) % phrases.length;
 
     // Small pause before typing the next phrase

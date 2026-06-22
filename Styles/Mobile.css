@@ -231,6 +231,16 @@ body {
   line-height: 1.6;
 }
 
+.ContactMeSocials {
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.SocialLink img {
+  width: 32px;
+  height: 32px;
+}
+
 /* Footer ============================================================================= */
 footer {
   padding: 16px;
