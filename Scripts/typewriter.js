@@ -1,6 +1,6 @@
 // Create a list (array) of phrases to cycle through, typing and deleting each one in turn
 const phrases = [
-  "I like to develop and create ... Sometimes",
+  "I like to develop and create ... sometimes",
   "Software Engineer, Web Developer & A Designer",
   "Always learning something new"
 ];
